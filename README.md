@@ -1,6 +1,13 @@
 # Dolphin-360-Linux
 Dolphin button mappings for Xbox 360 pads under Linux (Windows ini files don't work because the input stacks return other values)
 
+Installation:
+
+The quickest way is to paste the following command squence into your terminal:
+
+    install -d ~/.config/dolphin-emu/Profiles/Wiimote;cd ~/.config/dolphin-emu/Profiles/Wiimote/;wget https://github.com/KAMiKAZOW/Dolphin-360-Linux/archive/master.zip;unzip -j master.zip;rm master.zip
+    
+
 Classic Controller.ini
 ----------------------
 * Mimics **Wii Classic Controller**

@@ -13,13 +13,9 @@ If you happen to use [Ishiiruka-Dolphin](https://github.com/Tinob/Ishiiruka), en
     install -d ~/.config/ishiiruka/Profiles/Wiimote;cd ~/.config/ishiiruka/Profiles/Wiimote/;wget https://github.com/KAMiKAZOW/Dolphin-360-Linux/archive/master.zip;unzip -j master.zip;rm master.zip
 
 ### Use different Xbox pads
-The ini files here are also compatible with other Xbox pads. Change the line
+The ini files here are also compatible with other Xbox pads. Change the first line to match to whatever the Dolphin input settings say your pad is called, eg. for the second generation Xbox One pad (“Microsoft X-Box One S pad”) enter in your terminal:
 
-    Device = evdev/0/Microsoft X-Box 360 pad
-
-to whatever the Dolphin input settings say your pad is called, eg. for the second generation Xbox One pad:
-
-    Device = evdev/0/Microsoft X-Box One S pad
+    sed -i -e 's/Microsoft X-Box 360 pad/Microsoft X-Box One S pad/g' ~/.config/dolphin-emu/Profiles/Wiimote/*.ini
 
 Classic Controller.ini
 ----------------------
